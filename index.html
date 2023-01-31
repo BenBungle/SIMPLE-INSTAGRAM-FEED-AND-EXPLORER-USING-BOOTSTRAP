@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <style>
+    .size {
+      width:100%;
+      height:450px;
+      object-fit: cover;
+    }
+  </style>
+
+  <title>instagram feed using bootstrap</title>
+</head>
+
+<body>
+  <div class="container-fluid bg-light">
+    <div class="row">
+      <div class="col-6">
+        <i class="fa-brands fa-instagram d-flex p-3">
+          <h6 class="font-monospace ps-2 m-0">Instagram</h6>
+        </i>
+      </div>
+      <ul class="col-6 nav nav-pills justify-content-end p-3">
+        <li class="nav-item">
+          <a class="nav-link active bg-success" data-bs-toggle="modal" data-bs-target="#myModal" href="#myModal">Create
+            New Post</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#"><i
+              class="fa-sharp fa-solid fa-gear"></i></a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy & Data</a></li>
+            <li>
+              <hr class="dropdown-divider">
+            </li>
+            <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+      <!-- The Modal -->
+      <div class="modal" id="myModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <!-- Modal Header -->
+            <div class="modal-header">
+              <h4 class="modal-title">Create New Post</h4>
+              <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+            </div>
+            <!-- Modal body -->
+            <div class="modal-body">
+              <label for="comment">Caption</label>
+              <textarea class="form-control" rows="2" id="comment" name="text"
+                placeholder="Add captions of your post here"></textarea>
+              <i class="fa-solid fa-camera"></i> <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <!-- Modal footer -->
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid bg-dark">
+    <div class="row">
+      <div class="col-12 text-center">
+        <a href="./grid.html" class="mx-1"><i class="fa-solid fa-table-cells"></i></a>
+        <a href="./index.html" class="mx-1"><i class="fa-solid fa-square"></i></a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12 justify-content-center">
+        <div class="card w-50 my-3 mx-auto">
+          <div class="card-header d-flex justify-content-between">
+            <h4 class="card-title">My dog Spike</h4>
+            <p class="text-end">31/01</p>
+          </div>
+          <div class="card-body">
+            <img class="size"
+              src="https://images.pexels.com/photos/4750002/pexels-photo-4750002.jpeg?auto=compress&cs=tinysrgb&w=600">
+              <p class="fw-bolder" class="card-text" >201 Likes</p>
+            <p>This is my beast with more energy than a bull </p>
+          </div>
+          <div class="card-footer text-muted">
+            1 hour ago
+          </div>
+        </div>
+        <div class="card w-50 my-3 mx-auto">
+          <div class="card-header d-flex justify-content-between">
+            <h4 class="card-title">Blender Curves metal texture</h4>
+            <p class="text-end">28/01</p>
+          </div>
+          <div class="card-body">
+            <img class="size"
+              src="https://images.pexels.com/photos/137594/pexels-photo-137594.jpeg?auto=compress&cs=tinysrgb&w=600">
+              <p class="fw-bolder" class="card-text" >400 Likes</p>
+            <p>made this awsome bending metal curves structure on blender </p>
+          </div>
+          <div class="card-footer text-muted">
+            3 days ago
+          </div>
+        </div>
+        <div class="card w-50 my-3 mx-auto">
+          <div class="card-header d-flex justify-content-between">
+            <h4 class="card-title">Coachella</h4>
+            <p class="text-end">15/01</p>
+          </div>
+          <div class="card-body">
+            <img class="size"
+              src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=600">
+              <p class="fw-bolder" class="card-text" >352 Likes</p>
+            <p>Coachella this year was dope af </p>
+          </div>
+          <div class="card-footer text-muted">
+            16 days ago
+          </div>
+        </div>
+        
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+</body>
+
+</html>
